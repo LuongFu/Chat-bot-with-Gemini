@@ -16,19 +16,13 @@
 }
 
 body {
-  background-color: transparent;
-  background-image: none;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: auto;
-  overflow: hidden;
+  
 }
 
 .chatCard {
-  position: fixed;
   display: flex;
   flex-direction: column;
+  position: fixed;
   bottom: 80px;
   right: 20px;
   width: 320px;
@@ -108,12 +102,12 @@ body {
 }
 
 .message_area {
-  flex: 1;
-  overflow-y: auto;
-  padding: 5px; /* Padding bottom to avoid input overlap */
+  /*padding: 10px 10px 70px; /* Padding bottom to avoid input overlap */
   max-height: calc(100% - 100px);
   overflow-y: auto;
   scroll-behavior: smooth;
+  padding: 10px;
+  flex: 1; /* Allow the message area to grow and fill available space */
 }
 
 .message {
@@ -161,8 +155,6 @@ body {
   padding: 10px;
   background: #000;
   /* position: fixed;
-  display: flex;
-  align-items: center;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -181,25 +173,14 @@ body {
 
 .sending {
   display: flex;
+  align-items: center; /* new */
+  width: 100%;
+  height: 90%;
   position: relative;
-  align-items: center;
 }
 
-.input-area input {
-  flex-grow: 1;
-  height: 100%;
-  padding: 10px 50px 10px 15px;
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: rgb(133, 130, 130);
-  font-size: 14px;
-  user-select: text;
-}
-
-/* text input */
-.input-area textarea {
+/* new (textarea) */
+.sending textarea {
   flex: 1;
   resize: none;
   overflow-y: auto;
@@ -214,7 +195,35 @@ body {
   color: white;
 }
 
+.input-area input {
+  flex-grow: 1;
+  height: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(133, 130, 130);
+  font-size: 14px;
+  user-select: text;
+}
+
 .input-area .send {
+  /* position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(133, 130, 130, 0.41);
+  border-radius: 50%;
+  color: rgb(133, 130, 130);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; */
   position: absolute;
   right: 5px;
   top: 50%;
@@ -226,6 +235,7 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .input-area .send:hover {
