@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="chatToggle" title="Open Chat" style="position: fixed; bottom: 10px; right: 10px; background: linear-gradient(90deg, #A5EAED, #FDB5DA, #A5EAED); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 100;">
+    <div id="chatToggle" title="Open Chat" style="position: fixed; bottom: 10px; right: 10px; background: linear-gradient(90deg, #DD2931, #F5365C); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 100;">
     <i class="fa-brands fa-github-alt" style="color: white; font-size: 24px;"></i>
   </div>
     <div class="chatCard">
       <div class="head">
         <div class="left">
-          <div class="img"><img src="/logo.png" alt=""></div>
-    <span class="display-4 animate__animated animate__fadeInDown gradient-text">NihongoSekaiBot</span>
+          <!-- <div class="img"><img src="/logo.png" alt=""></div> -->
+           <div class="img"><span class="brand-icon" style="color: #F5365C; margin-right: 3px;" >日</span></div>
+    <span class="display-4 animate__animated animate__fadeInDown gradient-text">NihongoSekai Bot</span>
 
         </div>
       </div>
       <div class="message_area">
         <div class="message ai-message">
-          <div class="img"><img src="/logo.png" alt=""></div>
+          <div class="img"><span class="brand-icon" style="color: #F5365C; margin-right: 3px;" >日</span></div>
           <div class="text">もしもし、日本語世界ボトです</div>
         </div>
         <!-- User Message Template -->
@@ -30,7 +31,7 @@
         
       </div>
       <div class="input-area">
-        <div class="loading">Little Bot is typing<span class="dot1"></span> <span class="dot2"></span> <span class="dot3"></span></div>
+        <div class="loading"><span class="dot1"></span> <span class="dot2"></span> <span class="dot3"></span></div>
         <div class="sending">
           <textarea class="input" placeholder="Type your message here" rows="1"></textarea>
         <button class="send"><i class="fa-regular fa-paper-plane"></i></button>

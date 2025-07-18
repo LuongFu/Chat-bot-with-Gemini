@@ -54,7 +54,7 @@ body {
 
 /* Gradient text (for "Sekai") */
 .gradient-text {
-    background: linear-gradient(270deg, #A5EAED, #FDB5DA, #A5EAED);
+    background: linear-gradient(270deg, #DD2931, #FDB5DA, #F5365C);
     background-size: 600% 600%;
     animation: moveGradient 5s ease infinite;
     -webkit-background-clip: text;
@@ -147,8 +147,10 @@ body {
 }
 
 .message .img img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  margin-left: 5px;
   border-radius: 50%;
   object-fit: cover;
   user-select: none;
@@ -180,8 +182,8 @@ body {
 }
 
 .user-message .text {
-  background-color: rgb(108, 255, 206);
-  color: #000;
+  background-color: #F5365C;
+  color: #FFFFFF;
 }
 
 .input-area {
